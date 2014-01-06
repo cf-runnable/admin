@@ -7,6 +7,6 @@ find . ! -name .setup ! -path ./WEB-INF\* -delete
 # Clone repo into sub dir                                                                                                                                                           
 git clone http://github.com/cf-runnable/$1 ./__tmp                                                                                                                                  
                                                                                                                                                                                     
-mv __tmp/* ./                                                                                                                                                                       
+mv -f __tmp/* ./                                                                                                                                                                       
                                                                                                                                                                                     
 rm -R __tmp 
